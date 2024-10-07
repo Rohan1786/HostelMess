@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose the content</title>
+    <style>
+        body {
+    background-image: url('/images/canteen.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    color: antiquewhite;
+}
+
+html {
+    height: 100%;
+}
+
+.header {
+    background-color: rgba(255, 165, 0, 0.5); /* Use rgba for color with opacity */
+    border: 2px solid rgb(216, 155, 24);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.nav-links a {
+            padding: 10px;
+            border: 2px solid rgb(214, 177, 10);
+            background-color: rgb(238, 214, 0);
+            text-decoration: none;
+            color: rgb(170, 78, 16);
+            margin-left: 10px;
+            transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition on background-color and border-radius */
+            border-radius: 40%; /* Make it circular */
+            display: inline-block; /* Ensure inline-block display to make border-radius work */
+        }
+
+        .nav-links a:hover {
+            background-color: rgb(189, 129, 19);
+        }
+        div .d{
+            text-align: center;
+            margin-top: 50px;
+            animation: fadeIn 1s ease-out; /* Apply the animation to the div */
+        }
+
+        h1 p {
+            
+            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+        }
+h1{
+    text-align: center;
+}
+.d p{
+    color: white;
+    font-weight: bold;
+}
+        /* Animation effect */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/images/image2.jpeg" alt="Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="/admin">ADMIN</a>
+            <a href="/signup">REGISTER</a>
+            <a href="/login" class="login">LOGIN</a>
+        </div>
+    </div>
+   
+    <div class="d">
+        <h1>Welcome to the</h1><h1 style="color: rgb(241, 85, 12);"> Swarajya Mess</h1>
+        <p>🥗 "Fresh, crisp, and bursting with goodness! Our salads are a delightful blend of colors and flavors. 
+            Healthy never tasted so good! 🥑🍅</p>
+    </div>
+
+</body>
+</html>
